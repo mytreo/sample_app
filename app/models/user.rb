@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :microposts
   before_save { #self.email = email.downcase
                   email.downcase! } 
     
